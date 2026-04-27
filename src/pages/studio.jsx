@@ -119,9 +119,8 @@ function HeroSlideshow({ slides }) {
       {slides.map((src, i) => (
         <div
           key={i}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ${
-            i === current ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ${i === current ? "opacity-100" : "opacity-0"
+            }`}
           style={{ backgroundImage: `url(${src})` }}
         />
       ))}
@@ -150,9 +149,8 @@ function HeroSlideshow({ slides }) {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`rounded-full border-none cursor-pointer transition-all duration-300 ${
-              i === current ? "w-7 h-2 bg-[#F5A623]" : "w-2 h-2 bg-white/50 hover:bg-white/80"
-            }`}
+            className={`rounded-full border-none cursor-pointer transition-all duration-300 ${i === current ? "w-7 h-2 bg-[#F5A623]" : "w-2 h-2 bg-white/50 hover:bg-white/80"
+              }`}
           />
         ))}
       </div>
@@ -170,20 +168,37 @@ function ApartmentTour({ spots }) {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="flex flex-col lg:flex-row gap-0 rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-      {/* Tab list */}
-      <div className="flex flex-row lg:flex-col bg-[#0f1e2e] lg:w-56 overflow-x-auto lg:overflow-visible">
+    <div className="flex flex-col lg:flex-row rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+
+      {/* Mobile tabs — horizontal scrollable pills */}
+      <div className="flex lg:hidden bg-[#0f1e2e] overflow-x-auto px-3 py-3 gap-2" style={{ scrollbarWidth: "none" }}>
         {spots.map((spot, i) => (
           <button
             key={spot.label}
             onClick={() => setActive(i)}
-            className={`shrink-0 lg:shrink text-left px-5 py-4 font-sans text-sm font-medium border-none cursor-pointer transition-all duration-200 ${
-              i === active
-                ? "bg-[#E8691A] text-white"
-                : "text-white/50 hover:text-white hover:bg-white/5"
-            }`}
+            className={`flex-shrink-0 px-4 py-2 rounded-full font-sans text-sm font-medium border-none cursor-pointer transition-all duration-200 whitespace-nowrap ${i === active
+              ? "bg-[#E8691A] text-white"
+              : "bg-white/10 text-white/60 hover:bg-white/20 hover:text-white"
+              }`}
           >
-            <span className={`block text-[10px] uppercase tracking-widest mb-0.5 ${i === active ? "text-white/70" : "text-white/30"}`}>
+            {spot.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Desktop tabs — vertical sidebar */}
+      <div className="hidden lg:flex flex-col bg-[#0f1e2e] w-56">
+        {spots.map((spot, i) => (
+          <button
+            key={spot.label}
+            onClick={() => setActive(i)}
+            className={`text-left px-5 py-4 font-sans text-sm font-medium border-none cursor-pointer transition-all duration-200 ${i === active
+              ? "bg-[#E8691A] text-white"
+              : "text-white/50 hover:text-white hover:bg-white/5"
+              }`}
+          >
+            <span className={`block text-[10px] uppercase tracking-widest mb-0.5 ${i === active ? "text-white/70" : "text-white/30"
+              }`}>
               0{i + 1}
             </span>
             {spot.label}
@@ -192,22 +207,21 @@ function ApartmentTour({ spots }) {
       </div>
 
       {/* Image panel */}
-      <div className="flex-1 relative h-[260px] lg:h-[400px]">
+      <div className="relative w-full h-[280px] lg:h-[400px] lg:flex-1">
         {spots.map((spot, i) => (
           <div
             key={spot.label}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ${
-              i === active ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-0"
+              }`}
             style={{ backgroundImage: `url(${spot.image})` }}
           />
         ))}
         {/* Caption */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 z-10">
-          <p className="font-serif font-bold text-white text-lg mb-1">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent px-5 py-5 z-10">
+          <p className="font-serif font-bold text-white text-base mb-1">
             {spots[active].label}
           </p>
-          <p className="font-sans text-white/70 text-sm">
+          <p className="font-sans text-white/70 text-xs leading-relaxed line-clamp-2">
             {spots[active].description}
           </p>
         </div>
