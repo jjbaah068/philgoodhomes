@@ -8,6 +8,8 @@ import AmenitiesPage from "./pages/amenities";
 import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
 import Book from "./pages/book";
+import TermsOfUse from "./pages/termsofuse";
+import PrivacyPolicy from "./pages/privacypolicy";
 
 const philgoodhomes = createBrowserRouter([
 
@@ -20,6 +22,8 @@ const philgoodhomes = createBrowserRouter([
   {path: "/gallery", element: <PageTransition><Gallery/></PageTransition>},
   {path: "/contact", element: <PageTransition><Contact/></PageTransition>},
   {path: "/book", element: <PageTransition><Book/></PageTransition>},
+  {path: "/termsofuse", element: <PageTransition><TermsOfUse/></PageTransition>},
+  {path: "/privacypolicy", element: <PageTransition><PrivacyPolicy/></PageTransition>}
 
 ])
 

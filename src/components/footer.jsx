@@ -226,11 +226,11 @@ export default function Footer() {
             © {currentYear} PhilGood Homes. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link to="/privacy" className="font-sans text-white/25 hover:text-white/50 text-xs no-underline transition-colors">
+            <Link to="/privacypolicy" className="font-sans text-white/25 hover:text-white/50 text-xs no-underline transition-colors">
               Privacy Policy
             </Link>
             <span className="text-white/10">·</span>
-            <Link to="/terms" className="font-sans text-white/25 hover:text-white/50 text-xs no-underline transition-colors">
+            <Link to="/termsofuse" className="font-sans text-white/25 hover:text-white/50 text-xs no-underline transition-colors">
               Terms of Use
             </Link>
           </div>
