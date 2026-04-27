@@ -8,11 +8,22 @@ export default function Hero({ videoSrc = null, imageSrc = "/hero-bg.jpg" }) {
     const [guests, setGuests] = useState("2");
     const navigate = useNavigate();
 
+    const [error, setError] = useState("");
+
     const handleBook = () => {
-        if (!checkIn || !checkOut) {
-            alert("Please select your check-in and check-out dates.");
+        if (!checkIn && !checkOut) {
+            setError("Please select your check-in and check-out dates.");
             return;
         }
+        if (!checkIn) {
+            setError("Please select a check-in date.");
+            return;
+        }
+        if (!checkOut) {
+            setError("Please select a check-out date.");
+            return;
+        }
+        setError("");
         navigate(`/book?checkIn=${checkIn}&checkOut=${checkOut}&guests=${guests}`);
     };
 
@@ -121,6 +132,25 @@ export default function Hero({ videoSrc = null, imageSrc = "/hero-bg.jpg" }) {
                         Book Now
                     </button>
                 </div>
+
+                {/* Error message */}
+                {error && (
+                    <div className="flex items-center gap-2 bg-red-500/20 border border-red-400/40 backdrop-blur-sm text-white text-xs font-sans px-4 py-2.5 rounded-xl mt-3">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-3.5 h-3.5 text-red-300 flex-shrink-0">
+                            <circle cx="8" cy="8" r="6" />
+                            <path d="M8 5v3M8 10.5h.01" />
+                        </svg>
+                        <span className="text-red-200">{error}</span>
+                        <button
+                            onClick={() => setError("")}
+                            className="ml-auto text-red-300 hover:text-white bg-transparent border-none cursor-pointer p-0"
+                        >
+                            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="w-3 h-3">
+                                <path d="M2 2l8 8M10 2L2 10" />
+                            </svg>
+                        </button>
+                    </div>
+                )}
 
                 {/* Trust indicators */}
                 <div className="flex flex-wrap justify-center items-center gap-4 mt-8 text-white/60 text-xs font-sans">
