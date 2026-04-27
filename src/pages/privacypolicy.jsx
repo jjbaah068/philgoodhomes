@@ -130,7 +130,7 @@ export default function PrivacyPolicy() {
               ← Back to Home
             </Link>
             <Link
-              to="/terms"
+              to="/termsofuse"
               className="flex items-center gap-2 text-sm font-sans font-semibold text-gray-400 hover:text-[#E8691A] no-underline transition-colors"
             >
               View Terms of Use →
