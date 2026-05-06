@@ -7,6 +7,8 @@ import Footer from "./../components/footer";
 import house1 from "../assets/images/house1.jpeg";
 import house2 from "../assets/images/house2.jpeg";
 import house3 from "../assets/images/house3.jpeg";
+import house4 from "../assets/images/housebed1.jpeg";
+import houseliv from "../assets/images/houseliv1.jpeg";
 import houseVideo from "../assets/videos/house.mp4";
 
 const PROPERTIES = [
@@ -36,6 +38,24 @@ const PROPERTIES = [
         status: "For Sale",
         description:
             "The pinnacle of residential luxury. Five bedrooms, four bathrooms, and architectural details that make a statement the moment you arrive.",
+    },
+    {
+        id: 4,
+        image: house4,
+        label: "Modern Bedroom Villa",
+        location: "East Legon Hills, Accra",
+        status: "For Sale",
+        description:
+            "A villa that redefines modern living with a focus on comfort and style. Featuring a spacious bedroom, en-suite bathroom, and an open-plan living area that seamlessly connects to the outdoors.",
+    },
+    {
+        id: 5,
+        image: houseliv,
+        label: "Modern Living Villa",
+        location: "East Legon Hills, Accra",
+        status: "For Sale",
+        description:
+            "Experience the perfect blend of modern design and comfortable living in this villa. With an expansive living area, state-of-the-art kitchen, and seamless indoor-outdoor flow, it's ideal for entertaining or relaxing in style.",
     },
 ];
 
@@ -224,7 +244,7 @@ Could you please share more details including the asking price? Thank you!`;
                     {/* CTAs */}
                     <div className="flex flex-col sm:flex-row gap-3">
                         <a
-                            href={`https://wa.me/233597096207?text=${encodeURIComponent(waMessage)}`}
+                            href={`https://wa.me/15133725758?text=${encodeURIComponent(waMessage)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex-1 py-3.5 bg-[#E8691A] hover:bg-[#F5A623] text-white font-semibold text-sm rounded-xl no-underline transition-colors duration-200 font-sans text-center flex items-center justify-center gap-2"
@@ -294,7 +314,7 @@ export default function RealEstate() {
               </a> */}
 
                             <a
-                                href="https://wa.me/233597096207"
+                                href="https://wa.me/15133725758"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-7 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/25 text-white font-semibold text-sm rounded-xl no-underline transition-all duration-200 font-sans text-center"
@@ -376,7 +396,7 @@ export default function RealEstate() {
                                     PhilGood Homes started with premium short-stay apartments — now we're bringing that same standard of quality and care to residential real estate. Every property we sell is one we're proud to put our name on.
                                 </p>
                                 <a
-                                    href="https://wa.me/233597096207"
+                                    href="https://wa.me/15133725758"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#E8691A] hover:bg-[#F5A623] text-white font-semibold text-sm rounded-xl no-underline transition-colors duration-200 font-sans"
@@ -432,7 +452,7 @@ export default function RealEstate() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <a
-                                href="https://wa.me/233597096207?text=Hello%20PhilGood%20Homes!%20I'm%20interested%20in%20your%20real%20estate%20properties%20for%20sale%20in%20East%20Legon%20Hills.%20Could%20you%20please%20share%20more%20details%3F"
+                               href="https://wa.me/15133725758?text=Hello%20PhilGood%20Homes!%20I'm%20interested%20in%20your%20real%20estate%20properties%20for%20sale%20in%20East%20Legon%20Hills.%20Could%20you%20please%20share%20more%20details%3F"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-4 bg-[#E8691A] hover:bg-[#F5A623] text-white font-semibold text-sm rounded-xl no-underline transition-colors duration-200 font-sans flex items-center gap-2"

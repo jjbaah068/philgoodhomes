@@ -4,10 +4,10 @@ import Navbar from "./../components/navbar";
 import Footer from "./../components/footer";
 
 // ── Slide images — update paths to match your actual studio photos ──
-import slide1 from "../assets/images/slide1.jpeg";
-import slide2 from "../assets/images/slide2.jpeg";
-import slide3 from "../assets/images/kitchen.jpeg";
-import slide4 from "../assets/images/waterheater.jpeg";
+import slide1 from "../assets/images/slide11.jpeg";
+import slide2 from "../assets/images/slide12.jpeg";
+import slide3 from "../assets/images/slide13.jpeg";
+import slide4 from "../assets/images/slide14.jpeg";
 
 const SLIDES = [slide1, slide2, slide3, slide4];
 

@@ -205,7 +205,7 @@ ${form.message}`;
                 <div>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-white/30 mb-0.5">Our Location</p>
                   <p className="font-serif font-bold text-white text-base">East Legon Hills</p>
-                  <p className="font-sans text-white/50 text-xs mt-0.5">Accra, Ghana · Exact address shared after booking</p>
+                  <p className="font-sans text-white/50 text-xs mt-0.5">Accra, Ghana </p>
                 </div>
               </div>
             </div>

@@ -116,7 +116,7 @@ export default function Hero({ videoSrc = null, imageSrc = "/hero-bg.jpg" }) {
                             onChange={(e) => setGuests(e.target.value)}
                             className="bg-transparent text-white text-sm font-medium border-none outline-none cursor-pointer font-sans"
                         >
-                            {[1, 2, 3, 4, 5, 6].map((n) => (
+                            {[1, 2, 3, 4].map((n) => (
                                 <option key={n} value={n} className="text-gray-800 bg-white">
                                     {n} {n === 1 ? "Guest" : "Guests"}
                                 </option>

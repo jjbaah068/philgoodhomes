@@ -4,7 +4,7 @@ import Navbar from "./../components/navbar";
 import Footer from "./../components/footer";
 
 // ── Slide images — update paths to match your actual 1-bedroom photos ──
-import slide4 from "../assets/images/one.jpeg";
+import slide4 from "../assets/images/slide22.jpeg";
 import slide1 from "../assets/images/two.png";
 import slide2 from "../assets/images/three.png";
 import slide3 from "../assets/images/four.png";

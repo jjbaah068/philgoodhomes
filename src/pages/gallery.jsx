@@ -8,10 +8,14 @@ import slide2 from "../assets/images/slide2.jpeg";
 import kitchen from "../assets/images/kitchen.jpeg";
 import waterheater from "../assets/images/waterheater.jpeg";
 import twokitchen from "../assets/images/twokitchen.png";
-import aircondition from "../assets/images/aircondition.jpg";
-import bathroom from "../assets/images/bathroom.jpg";
+import aircondition from "../assets/images/slide11.jpeg";
+import bathroom from "../assets/images/slide14.jpeg";
 import two from "../assets/images/two.png";
 import twoliving from "../assets/images/twoliving.png";
+import living1 from "../assets/images/slide20.jpeg";
+import kitchen1 from "../assets/images/slide13.jpeg";
+import bed1 from "../assets/images/slide15.jpeg";
+import bed2 from "../assets/images/slide21.jpeg";
 import herobg from "../assets/videos/hero.mp4";
 
 const CATEGORIES = ["All", "Living Spaces", "Kitchen", "Bathroom", "Bedroom"];
@@ -26,6 +30,10 @@ const GALLERY_ITEMS = [
     { type: "image", src: twokitchen, category: "Kitchen", caption: "Two-person kitchen" },
     { type: "image", src: two, category: "Living Spaces", caption: "One person living space" },
     { type: "image", src: twoliving, category: "Living Spaces", caption: "Two-person living space" },
+    { type: "image", src: living1, category: "Living Spaces", caption: "Studio living space" },
+    { type: "image", src: kitchen1, category: "Kitchen", caption: "Modern kitchen design" },
+    { type: "image", src: bed1, category: "Bedroom", caption: "Cozy bedroom" },
+    { type: "image", src: bed2, category: "Bedroom", caption: "Spacious bedroom" },
     { type: "video", src: herobg, category: "Living Spaces", caption: "PhilGood Homes — East Legon Hills", featured: true },
 ];
 

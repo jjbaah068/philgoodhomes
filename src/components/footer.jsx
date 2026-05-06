@@ -104,7 +104,7 @@ export default function Footer() {
             </div>
           </Link>
           <p className="font-sans text-white/50 text-sm leading-relaxed mb-6">
-            Your home, away from home. Premium short-stay apartments in East Legon Hills, Accra.
+            Your home, away from home. Premium short and long stay apartments in East Legon Hills, Accra.
           </p>
 
           {/* Socials */}
@@ -184,8 +184,24 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <p className="font-sans text-[10px] text-white/30 uppercase tracking-widest mb-0.5">Call / WhatsApp</p>
+                <p className="font-sans text-[10px] text-white/30 uppercase tracking-widest mb-0.5">Ghana · Call / WhatsApp</p>
                 <p className="font-sans text-white/60 text-sm group-hover:text-[#F5A623] transition-colors duration-200">+233 59 709 6207</p>
+              </div>
+            </a>
+
+            {/* US Phone */}
+            <a
+              href="tel:+15133725758"
+              className="flex items-start gap-3 no-underline group"
+            >
+              <div className="w-8 h-8 rounded-lg bg-white/5 group-hover:bg-[#E8691A]/20 flex items-center justify-center flex-shrink-0 transition-colors duration-200 mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-3.5 h-3.5 text-[#F5A623]">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans text-[10px] text-white/30 uppercase tracking-widest mb-0.5">US · Call / WhatsApp</p>
+                <p className="font-sans text-white/60 text-sm group-hover:text-[#F5A623] transition-colors duration-200">+1 (513) 372-5758</p>
               </div>
             </a>
 
@@ -238,6 +254,6 @@ export default function Footer() {
         </div>
       </div>
 
-    </footer>
+    </footer >
   );
 }
