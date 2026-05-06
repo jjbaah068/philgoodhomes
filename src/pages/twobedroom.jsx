@@ -345,7 +345,7 @@ export default function TwoBedroom() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
                 {[
                   { label: "Type", value: "2-Bedroom" },
-                  { label: "Guests", value: "1 – 3" },
+                  { label: "Guests", value: "1 – 4" },
                   { label: "Bedrooms", value: "2 Private" },
                   { label: "Bathrooms", value: "2 Private" },
                 ].map((stat) => (
@@ -427,6 +427,7 @@ export default function TwoBedroom() {
                       <option>1 Guest</option>
                       <option>2 Guests</option>
                       <option>3 Guests</option>
+                      <option>4 Guests</option>
                     </select>
                   </div>
 

@@ -1,10 +1,10 @@
 import Navbar from "./../components/navbar";
 import Footer from "./../components/footer";
 
-import wifi from "../assets/images/wifi.jpg";
+import wifi from "../assets/images/wifi1.jpg";
 import waterheater from "../assets/images/waterheater.jpeg";
 import kitchen from "../assets/images/kitchen.jpeg";
-import aircondition from "../assets/images/aircondition.jpg";
+import aircondition from "../assets/images/aircondition1.jpeg";
 import bathroom from "../assets/images/bathroom.jpg";
 import generator from "../assets/images/generator.jpg";
 import security from "../assets/images/security.jpg";

@@ -10,6 +10,9 @@ import Contact from "./pages/contact";
 import Book from "./pages/book";
 import TermsOfUse from "./pages/termsofuse";
 import PrivacyPolicy from "./pages/privacypolicy";
+import RealEstate from "./pages/realestate";
+import RatingWidget from "./components/ratingwidget";
+import NotFound from "./pages/notfound";
 
 const philgoodhomes = createBrowserRouter([
 
@@ -23,7 +26,9 @@ const philgoodhomes = createBrowserRouter([
   {path: "/contact", element: <PageTransition><Contact/></PageTransition>},
   {path: "/book", element: <PageTransition><Book/></PageTransition>},
   {path: "/termsofuse", element: <PageTransition><TermsOfUse/></PageTransition>},
-  {path: "/privacypolicy", element: <PageTransition><PrivacyPolicy/></PageTransition>}
+  {path: "/privacypolicy", element: <PageTransition><PrivacyPolicy/></PageTransition>},
+  {path: "/realestate", element: <PageTransition><RealEstate/></PageTransition>},
+  { path: "*", element: <PageTransition><NotFound /></PageTransition> },
 
 ])
 
@@ -31,6 +36,8 @@ function App() {
   return (
     <>
     <RouterProvider router={philgoodhomes}/>
+
+    <RatingWidget/>
     
     </>
   )

@@ -8,8 +8,9 @@ import slide4 from "../assets/images/one.jpeg";
 import slide1 from "../assets/images/two.png";
 import slide2 from "../assets/images/three.png";
 import slide3 from "../assets/images/four.png";
+import slide5 from "../assets/images/twobathroom.png";
 
-const SLIDES = [slide1, slide2, slide3, slide4];
+const SLIDES = [slide1, slide5, slide3, slide4];
 
 const FEATURES = [
   {
@@ -115,7 +116,7 @@ const TOUR_SPOTS = [
   {
     label: "Bathroom",
     description: "Pristine private bathroom with hot water, fresh towels, and toiletries provided.",
-    image: slide2,
+    image: slide5,
   },
 ];
 
@@ -413,7 +414,7 @@ export default function OneBedRoom() {
                         Studio
                       </Link>
                       <Link
-                        to="/apartments/2-bedroom"
+                        to="/apartments/twobedroom"
                         className="flex-1 text-center py-2 text-xs font-semibold text-gray-400 hover:text-[#E8691A] border border-gray-100 hover:border-[#E8691A] rounded-lg no-underline transition-all font-sans"
                       >
                         2-Bedroom

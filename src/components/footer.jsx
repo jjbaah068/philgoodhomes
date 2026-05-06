@@ -5,6 +5,7 @@ const QUICK_LINKS = [
   { label: "Home", to: "/" },
   // { label: "Our Apartments", to: "/apartments" },
   { label: "Amenities", to: "/amenities" },
+  { label: "Real Estate", to: "/realestate" },
   { label: "Gallery", to: "/gallery" },
   { label: "Contact", to: "/contact" },
 ];

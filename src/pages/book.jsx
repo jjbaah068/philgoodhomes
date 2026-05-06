@@ -6,7 +6,7 @@ import Footer from "./../components/footer";
 const APARTMENTS = [
   { label: "Studio Apartment", value: "studio", price: 40, guests: 2 },
   { label: "1-Bedroom Suite", value: "1bedroom", price: 60, guests: 3 },
-  { label: "2-Bedroom Suite", value: "2bedroom", price: 70, guests: 5 },
+  { label: "2-Bedroom Suite", value: "2bedroom", price: 70, guests: 4 },
 ];
 
 const STEPS = ["Booking Details", "Review & Pay", "Confirm"];
@@ -135,7 +135,7 @@ function StepDetails({ form, setForm, onNext }) {
               onChange={(e) => setForm({ ...form, guests: e.target.value })}
               className="border border-gray-200 rounded-xl px-4 py-3 text-sm font-sans text-gray-700 outline-none focus:border-[#E8691A] transition-colors"
             >
-              {[1,2,3,4,5].map((n) => (
+              {[1,2,3,4].map((n) => (
                 <option key={n} value={n}>{n} {n === 1 ? "Guest" : "Guests"}</option>
               ))}
             </select>

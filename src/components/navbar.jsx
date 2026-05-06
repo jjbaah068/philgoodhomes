@@ -14,6 +14,7 @@ const NAV_LINKS = [
     ],
   },
   { label: "Amenities", to: "/amenities" },
+  { label: "Real Estate", to: "/realestate" },
   { label: "Gallery", to: "/gallery" },
   { label: "Contact", to: "/contact" },
 ];
