@@ -9,6 +9,8 @@ import house2 from "../assets/images/house2.jpeg";
 import house3 from "../assets/images/house3.jpeg";
 import house4 from "../assets/images/housebed1.jpeg";
 import houseliv from "../assets/images/houseliv1.jpeg";
+import housebath from "../assets/images/waterheater.jpeg";
+import housekitchen from "../assets/images/kitchen.jpeg";
 import houseVideo from "../assets/videos/house.mp4";
 
 const PROPERTIES = [
@@ -57,6 +59,24 @@ const PROPERTIES = [
         description:
             "Experience the perfect blend of modern design and comfortable living in this villa. With an expansive living area, state-of-the-art kitchen, and seamless indoor-outdoor flow, it's ideal for entertaining or relaxing in style.",
     },
+    {
+        id: 6,
+        image: housebath,
+        label: "Modern Bathroom Villa",
+        location: "East Legon Hills, Accra",
+        status: "For Sale",
+        description:
+            "Indulge in the ultimate bathroom experience with this villa's luxurious bathroom design. Featuring high-end fixtures, a spacious layout, and elegant finishes, it's a private oasis for relaxation and rejuvenation.",
+    },
+    {
+        id: 7,
+        image: housekitchen,
+        label: "Modern Kitchen Villa",
+        location: "East Legon Hills, Accra",
+        status: "For Sale",
+        description:
+            "A chef's dream come true with this villa's state-of-the-art kitchen. Featuring premium appliances, ample counter space, and a layout designed for efficient meal preparation and entertaining.",
+    }
 ];
 
 const WHY_US = [

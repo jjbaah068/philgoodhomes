@@ -6,7 +6,7 @@ import Footer from "./../components/footer";
 import slide1 from "../assets/images/slide1.jpeg";
 import slide2 from "../assets/images/slide2.jpeg";
 import kitchen from "../assets/images/kitchen.jpeg";
-import waterheater from "../assets/images/waterheater.jpeg";
+import waterheater from "../assets/images/bath.jpeg";
 import twokitchen from "../assets/images/twokitchen.png";
 import aircondition from "../assets/images/slide11.jpeg";
 import bathroom from "../assets/images/slide14.jpeg";
@@ -17,15 +17,21 @@ import kitchen1 from "../assets/images/slide13.jpeg";
 import bed1 from "../assets/images/slide15.jpeg";
 import bed2 from "../assets/images/slide21.jpeg";
 import herobg from "../assets/videos/hero.mp4";
+import entrance from "../assets/images/entrance.jpeg";
+import entrance1 from "../assets/images/entrance1.jpeg";
+import living from "../assets/images/living.jpeg";
 
-const CATEGORIES = ["All", "Living Spaces", "Kitchen", "Bathroom", "Bedroom"];
+
+const CATEGORIES = ["All","Entrance", "Living Spaces", "Kitchen", "Bathroom", "Bedroom"];
 
 const GALLERY_ITEMS = [
     { type: "image", src: slide1, category: "Living Spaces", caption: "Open-plan living area", featured: true },
     { type: "image", src: slide2, category: "Bedroom", caption: "Premium bedroom suite" },
-    { type: "image", src: kitchen, category: "Kitchen", caption: "Fully equipped kitchen" },
+    { type: "image", src: entrance, category: "Entrance", caption: "Stunning entrance hall" },
+    { type: "image", src: entrance1, category: "Entrance", caption: "Modern entrance design" },
     { type: "image", src: bathroom, category: "Bathroom", caption: "Private en-suite bathroom" },
     { type: "image", src: aircondition, category: "Living Spaces", caption: "Climate-controlled rooms" },
+    { type: "image", src: living, category: "Living Spaces", caption: "Modern living space" },
     { type: "image", src: waterheater, category: "Bathroom", caption: "Hot water on demand" },
     { type: "image", src: twokitchen, category: "Kitchen", caption: "Two-person kitchen" },
     { type: "image", src: two, category: "Living Spaces", caption: "One person living space" },
