@@ -104,7 +104,8 @@ export default function Footer() {
             </div>
           </Link>
           <p className="font-sans text-white/50 text-sm leading-relaxed mb-6">
-            Your home, away from home. Premium short and long stay apartments in East Legon Hills, Accra.
+            Stay Like You Own It. 
+            Premium short and long stay apartments in East Legon Hills, Accra.
           </p>
 
           {/* Socials */}
