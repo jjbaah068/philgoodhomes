@@ -1,16 +1,12 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export default function PageTransition({ children }) {
+export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, [pathname]);
 
-  return (
-    <div style={{ animation: "pageEnter 0.4s ease forwards" }}>
-      {children}
-    </div>
-  );
+  return null;
 }

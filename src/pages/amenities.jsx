@@ -3,7 +3,7 @@ import Footer from "./../components/footer";
 
 import wifi from "../assets/images/wifi1.jpg";
 import waterheater from "../assets/images/waterheater.jpeg";
-import kitchen from "../assets/images/kitchen.jpeg";
+import kitchen from "../assets/images/amenitieskit.jpeg";
 import aircondition from "../assets/images/aircondition1.jpeg";
 import bathroom from "../assets/images/slide14.jpeg";
 import generator from "../assets/images/generator1.jpeg";
