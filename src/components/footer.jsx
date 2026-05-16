@@ -104,7 +104,7 @@ export default function Footer() {
             </div>
           </Link>
           <p className="font-sans text-white/50 text-sm leading-relaxed mb-6">
-            Stay Like You Own It. 
+            Stay Like You Own It.
             Premium short and long stay apartments in East Legon Hills, Accra.
           </p>
 
@@ -207,8 +207,13 @@ export default function Footer() {
             </a>
 
             {/* Location */}
-            <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <a
+              href="https://www.google.com/maps/search/Philgood+Heights+East+Legon+Hills+Accra"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3 no-underline group"
+            >
+              <div className="w-8 h-8 rounded-lg bg-white/5 group-hover:bg-[#E8691A]/20 flex items-center justify-center flex-shrink-0 transition-colors duration-200 mt-0.5">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="w-3.5 h-3.5 text-[#F5A623]">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
@@ -216,9 +221,14 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-sans text-[10px] text-white/30 uppercase tracking-widest mb-0.5">Location</p>
-                <p className="font-sans text-white/60 text-sm">East Legon Hills,<br />Accra, Ghana</p>
+                <p className="font-sans text-white/60 text-sm group-hover:text-[#F5A623] transition-colors duration-200">
+                  East Legon Hills,<br />Accra, Ghana
+                </p>
+                {/* <p className="font-sans text-[#F5A623]/50 text-[10px] mt-0.5 group-hover:text-[#F5A623] transition-colors duration-200">
+                  View on Google Maps →
+                </p> */}
               </div>
-            </div>
+            </a>
 
             {/* Airbnb */}
             <div className="flex items-start gap-3">
