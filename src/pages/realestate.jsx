@@ -28,7 +28,7 @@ const PROPERTIES = [
         image: house2,
         label: "Modern Family Home",
         location: "East Legon Hills, Accra",
-        status: "For Sale",
+        // status: "For Sale",
         description:
             "Thoughtfully designed for family living — spacious bedrooms, a chef's kitchen, and a secure compound in one of Accra's most desirable addresses.",
     },
@@ -37,7 +37,7 @@ const PROPERTIES = [
         image: house3,
         label: "Luxury Residence",
         location: "East Legon Hills, Accra",
-        status: "For Sale",
+        // status: "For Sale",
         description:
             "The pinnacle of residential luxury. Five bedrooms, four bathrooms, and architectural details that make a statement the moment you arrive.",
     },
@@ -46,7 +46,7 @@ const PROPERTIES = [
         image: house4,
         label: "Modern Bedroom Villa",
         location: "East Legon Hills, Accra",
-        status: "For Sale",
+        // status: "For Sale",
         description:
             "A villa that redefines modern living with a focus on comfort and style. Featuring a spacious bedroom, en-suite bathroom, and an open-plan living area that seamlessly connects to the outdoors.",
     },
@@ -55,7 +55,7 @@ const PROPERTIES = [
         image: houseliv,
         label: "Modern Living Villa",
         location: "East Legon Hills, Accra",
-        status: "For Sale",
+        // status: "For Sale",
         description:
             "Experience the perfect blend of modern design and comfortable living in this villa. With an expansive living area, state-of-the-art kitchen, and seamless indoor-outdoor flow, it's ideal for entertaining or relaxing in style.",
     },
@@ -64,7 +64,7 @@ const PROPERTIES = [
         image: housebath,
         label: "Modern Bathroom Villa",
         location: "East Legon Hills, Accra",
-        status: "For Sale",
+        status: "",
         description:
             "Indulge in the ultimate bathroom experience with this villa's luxurious bathroom design. Featuring high-end fixtures, a spacious layout, and elegant finishes, it's a private oasis for relaxation and rejuvenation.",
     },
@@ -73,7 +73,7 @@ const PROPERTIES = [
         image: housekitchen,
         label: "Modern Kitchen Villa",
         location: "East Legon Hills, Accra",
-        status: "For Sale",
+        status: "",
         description:
             "A chef's dream come true with this villa's state-of-the-art kitchen. Featuring premium appliances, ample counter space, and a layout designed for efficient meal preparation and entertaining.",
     }
@@ -141,11 +141,13 @@ function PropertyCard({ property, index, onClick }) {
             <div className="absolute inset-0 bg-[#E8691A]/0 group-hover:bg-[#E8691A]/15 transition-all duration-500" />
 
             {/* Status badge */}
-            <div className="absolute top-4 left-4 z-10">
-                <span className="bg-[#E8691A] text-white text-[10px] font-semibold tracking-[2px] uppercase px-3 py-1.5 rounded-full font-sans">
-                    {property.status}
-                </span>
-            </div>
+            {property.status && (
+                <div className="absolute top-4 left-4 z-10">
+                    <span className="bg-[#E8691A] text-white text-[10px] font-semibold tracking-[2px] uppercase px-3 py-1.5 rounded-full font-sans">
+                        {property.status}
+                    </span>
+                </div>
+            )}
 
             {/* Expand icon */}
             <div className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -472,7 +474,7 @@ export default function RealEstate() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <a
-                               href="https://wa.me/15133725758?text=Hello%20PhilGood%20Homes!%20I'm%20interested%20in%20your%20real%20estate%20properties%20for%20sale%20in%20East%20Legon%20Hills.%20Could%20you%20please%20share%20more%20details%3F"
+                                href="https://wa.me/15133725758?text=Hello%20PhilGood%20Homes!%20I'm%20interested%20in%20your%20real%20estate%20properties%20for%20sale%20in%20East%20Legon%20Hills.%20Could%20you%20please%20share%20more%20details%3F"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-4 bg-[#E8691A] hover:bg-[#F5A623] text-white font-semibold text-sm rounded-xl no-underline transition-colors duration-200 font-sans flex items-center gap-2"

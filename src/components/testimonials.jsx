@@ -6,7 +6,7 @@ const TESTIMONIALS = [
     location: "College Park, GA",
     stay: "Studio Apartment · July 2025",
     rating: 5,
-    text: "I had an amazing stay at Philgood Homes in Accra! From check-in to check-out, everything was smooth and professionally handled. The apartment was spotless, modern, and well-equipped with all the essentials I needed. The location was safe and convenient, with easy access to shops and main roads. What stood out most was the exceptional hospitality — I truly felt at home. Communication with the host was quick and helpful throughout my stay. I highly recommend Philgood Homes to anyone looking for comfort, peace of mind, and a touch of luxury in Accra. I'll definitely be coming back!",
+    text: "I had an amazing stay at Philgood Homes in Accra! From check-in to check-out, everything was smooth and professionally handled. The apartment was spotless, modern, and well-equipped with all the essentials I needed. The location was safe and convenient, with easy access to shops and main roads. What stood out most was the exceptional hospitality, I truly felt at home. Communication with the host was quick and helpful throughout my stay. I highly recommend Philgood Homes to anyone looking for comfort, peace of mind, and a touch of luxury in Accra. I'll definitely be coming back!",
     initials: "SO",
     color: "bg-[#E8691A]",
   },
@@ -102,7 +102,7 @@ export default function Testimonials() {
             What Our Guests Say
           </h2>
           <p className="text-gray-500 font-sans text-base max-w-md mx-auto">
-            Real experiences from real guests — we let them do the talking.
+            Real experiences from real guests, we let them do the talking.
           </p>
 
           {/* Overall rating */}

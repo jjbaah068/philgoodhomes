@@ -15,9 +15,9 @@ export default function Home() {
       <Hero
         videoSrc={herobg}
       />
-      <FeaturedApartments />
+      {/* <FeaturedApartments />
       
-         <Amenities />
+         <Amenities /> */}
        
       
    
