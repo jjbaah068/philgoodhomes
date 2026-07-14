@@ -62,7 +62,7 @@ const FAQS = [
   },
   {
     q: "Is airport pickup available?",
-    a: "Yes! We can arrange airport pickup from Kotoka International Airport for an additional fee. Just send us your flight information, and we will take care of the rest, making your arrival as convenient and stress-free as possible.",
+    a: "Yes! We can arrange airport pickup from Accra International Airport for an additional fee. Just send us your flight information, and we will take care of the rest, making your arrival as convenient and stress-free as possible.",
   },
   {
     q: "How do I make a booking?",
